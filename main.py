@@ -5,6 +5,7 @@ def obter_resposta(texto: str) -> str:
     comando: str = texto.lower()
 
 
+    """
     if comando in ('olá', 'boa tarde', 'bom dia'):
         return 'Olá tudo bem!'
     if comando == 'como estás':
@@ -21,6 +22,7 @@ def obter_resposta(texto: str) -> str:
         return f'Hoje é dia: {datetime.now():%d-%m-%Y}'
 
     return f'Desculpa, não entendi a questão! {texto}'
+    return f'Desculpa, não entendi a questão! {texto}' """
 
 """"
     respostas = {
