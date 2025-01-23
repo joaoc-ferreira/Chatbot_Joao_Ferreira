@@ -33,6 +33,8 @@ def obter_resposta(texto: str) -> str:
         ('bye', 'adeus', 'tchau'): 'Gostei de falar contigo! Até breve...',
         'historia de portugal': 'Portugal tem uma rica história...',
     }
+        ('tens horas?', 'que horas são?', 'podes dizer-me as horas?'): f'Claro, são: {datetime.now():%H:%M} horas',
+        ('que dia é hoje?', 'estamos a quantos?'): f'Hoje é dia: {datetime.now():%d-%m-%Y}',
 
     for chave, resposta in respostas.items():
         if isinstance(chave, tuple):
