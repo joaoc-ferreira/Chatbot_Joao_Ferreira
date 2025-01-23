@@ -35,6 +35,11 @@ def obter_resposta(texto: str) -> str:
     }
         ('tens horas?', 'que horas são?', 'podes dizer-me as horas?'): f'Claro, são: {datetime.now():%H:%M} horas',
         ('que dia é hoje?', 'estamos a quantos?'): f'Hoje é dia: {datetime.now():%d-%m-%Y}',
+        'qual é o melhor piloto de sempre?': 'O melhor piloto que alguma vez existiu chama-se Ayrton Senna da Silva.',
+        'qual é a melhor banda de sempre?': 'A melhor banda de sempre são, sem dúvida, os Pink Floyd.',
+        'qual o caminho para a paz mundial?': 'Empatia, bom senso e termos mais amor à vida, bem como, haver respeito uns pelos outros.',
+        'onde é que estão situados os teus servidores?': 'Na Nova Caledónia, na Polinésia Francesa.',
+        'qual é a tua cor favorita?': 'É o azul. Nas preferências clubísticas visto-me de verde e branco!'
 
     for chave, resposta in respostas.items():
         if isinstance(chave, tuple):
