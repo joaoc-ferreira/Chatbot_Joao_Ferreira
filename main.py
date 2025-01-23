@@ -41,11 +41,6 @@ def obter_resposta(texto: str) -> str:
         elif chave in comando:
             return resposta
 
-    if 'horas' in comando:
-        return f'São: {datetime.now():%H:%M} horas'
-
-    if 'data' in comando:
-        return f'Hoje é dia: {datetime.now():%d-%m-%Y}'
 
     return f'Desculpa, não entendi a questão! {texto}'
 
