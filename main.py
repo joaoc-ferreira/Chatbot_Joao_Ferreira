@@ -24,7 +24,6 @@ def obter_resposta(texto: str) -> str:
     return f'Desculpa, não entendi a questão! {texto}'
     return f'Desculpa, não entendi a questão! {texto}' """
 
-""""
     respostas = {
         ('olá', 'boa tarde', 'bom dia'): 'Olá tudo bem!',
         'como estás': 'Estou bem, obrigado!',
@@ -50,7 +49,6 @@ def obter_resposta(texto: str) -> str:
 
     return f'Desculpa, não entendi a questão! {texto}'
 
-"""
 
 def chat() -> None:
     print('Bem-vindo ao ChatBot!')
